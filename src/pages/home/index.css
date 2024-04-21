@@ -1,0 +1,315 @@
+body {
+    color: #fff;
+
+    background-image: url(/public/assets/images/fundo-de-comida-com-ingredientes-para-massas_1220-3108.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.nave {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 80px;
+
+    background-color: #000;
+
+}
+
+.nave a:nth-child(1) img {
+    display: flex;
+    justify-content: center;
+
+    height: 80px;
+
+    margin: 0px 15px 0px 80px;
+}
+
+.nave nav {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #000;
+}
+
+.nave .others a {
+    margin: 0px 50px;
+    
+    font-weight: 600;
+}
+
+.nave .others a:nth-child(1) {
+
+    background-image: linear-gradient(270deg, #ff0000,#ffff00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nave nav a:nth-child(2) {
+    background-image: linear-gradient(60deg, #ff0000,#ffff00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nave nav a:nth-child(3) {
+    background-image: linear-gradient(270deg, #ff0000,#ffff00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nave nav a:nth-child(4) {
+    background-image: linear-gradient(60deg, #ff0000,#ffff00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.nave a:hover  {
+    transition: 1s 0.1s;
+
+    text-decoration: underline overline;
+    text-decoration-color: #da1c1c;
+}
+
+/*--------------------------Main-Page--------------------------*/
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 50vw;
+    
+    color: #000;
+}
+
+.informacoes h2:nth-child(1) {
+    font-family: shei;
+}
+
+.informacoes h2 a {
+    display: inline-flex;
+    color: #000000;
+    text-decoration-color: #ff0000;
+
+    margin: 30px 0px;
+}
+
+.informacoes h2 a:hover {
+    transition: 0.5s;
+    
+    text-decoration-color: #fff;
+}
+
+.informacoes p {
+    height: 200px;
+    font-size: 22px;
+
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.informacoes .moco {    
+    width: 30%;
+    height: auto;
+
+    margin-bottom: 70px;
+    
+    clip-path: polygon(15% 0%, 80% 0%, 100% 30%, 100% 90%, 92% 100%, 20% 100%, 0% 70%, 0% 25%);
+}
+
+.informacoes .imagens img {
+    height: auto;
+    width: 14em;
+
+    gap: 20px;
+
+    border-radius: 10px;
+
+}
+
+.informacoes .imagens {
+    display: flex;
+    align-items: center;
+    
+    border: 2px solid #000;
+    border-radius: 10px;
+
+    padding: 20px;
+    gap: 20px;
+    
+    height: 100%;
+    width: auto;
+
+    background-color: #FCE3CD;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 1);
+}
+
+.imagens img:nth-child(3) {
+    height: 250px;
+    width: auto;
+}
+
+.informacoes h2:nth-child(4) {
+    margin-bottom: 50px;
+    font: 400 30px 'aproximacao';
+}
+
+.informacoes p:nth-child(6) {
+    width: 25em;
+
+    margin-top: 3em;
+}
+
+/*--------------------------Populares--------------------------*/
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+    margin: 25px 0px;
+
+    font: 400 30px 'aproximacao';
+
+    background-image: linear-gradient(to left, #e95353, #eea649, #dbdd46, #afdb47);
+
+    animation: titulo 1.5s infinite alternate;
+
+    background-size: 500% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-top: 20em;
+}
+
+@keyframes titulo {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.titulo .cartoes h1 {
+    font-size: 18px;
+    width: 160px;
+
+    margin: 15px 0px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: row;
+    text-align: center;
+    
+
+    margin-top: 50px;
+    
+    width: 100%;
+    height: 400px;
+
+    gap: 8em;
+}
+
+.titulo .cartoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 400px;
+    width: 200px;
+    
+    border: 1px solid #fff;
+
+    border-radius: 11px;
+
+    background-color: #000;
+}
+
+.titulo .cartoes:hover {
+    transition: 1s;
+
+    height: 110%;
+    width: 18%;
+    
+    box-shadow: 0px 1px 15px rgb(0, 0, 0);
+}
+
+.titulo .cartoes:hover h1 {
+    transition: 1s;
+
+    font-size: 22px;
+
+    width: 200px;
+}
+
+.titulo .cartoes:hover p {
+    transition: 0.5s;
+    
+    font-size: 16px;
+    
+    width: 210px;
+    
+    line-height: 130%;
+}
+
+.titulo .cartoes p {
+    background-clip: text;
+
+    width: 180px;
+
+    line-height: 130%;
+}
+
+.titulo img {
+    width: 100%;
+    
+    
+    background-color: #f13030;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    border-bottom: 1px solid #fff;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: 1px solid #000;
+        
+    color: #000;
+    text-decoration-color: #000;
+    background-color: #fff;
+
+    margin: 70px 0px 60px 44.6%;
+}
+
+.link:hover {
+    transition: 0.8s;
+
+    scale: 1.1;
+
+    color: #fff;
+    text-decoration-color: #fff;
+    border-color: #fff;
+    background-color: #000;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 1);
+}

@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Shei';
+    src: url(/public/assets/fonts/Barett\ Street.ttf);
+}
+
+@font-face {
+    font-family: 'Destaque';
+    src: url(/public/assets/fonts/Copyduck.ttf);
+}
+
+@font-face {
+    font-family: 'Aproximacao';
+    src: url(/public/assets/fonts/Marhiel.otf);
+}
